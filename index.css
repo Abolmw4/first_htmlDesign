@@ -1,12 +1,22 @@
+@font-face {
+    font-family: Yekan;
+    src: url(fonts/yekan/Yekan.woff);
+    font-style: normal;
+}
+*{
+    font-family:'Yekan';
+}
 #main{
     width: 40%;
-    height:650px;
+    /*height:650px;*/
+    height: 100%;
     background-color:#448D76;
     margin: auto;
     margin-top: 5%;
     border-radius: 15px;
     padding-right: 5%;
     padding-left: 5%;
+    padding-bottom: 3%;
 }
 #header{
     width: 55%;
@@ -19,7 +29,7 @@
     border-radius: 5px 5px 5px 5px;
 }
 h1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     font-size: 22px;
     color: #F7EDD4;
 }

@@ -12,7 +12,7 @@
         <div id="header">
             <h1>فرم استخدامی شرکت انبوه سازان</h1>
         </div>
-        <form action="" target="_blank">
+        <form action="" target="_blank" autocomplete="on">
             <fieldset>
                 <legend>اطلاعات شخصی</legend>
                 <label for="fname">نام:</label>
@@ -70,8 +70,47 @@
                     <label for="ker">keras</label>
                 </div>
             </fieldset>
+
+            <fieldset>
+                <legend>اطلاعات حقوق</legend>
+                <label for="experince">سطح کاری:</label>
+                <select id="experince" name="experince">
+                    <option value="inter">کارآموز</option>
+                    <option value="junior" selected>جوان</option>
+                    <option value="midele">متوسط</option>
+                    <option value="senior">ارشد</option>
+                    <option value="leader">رهبر</option>
+                </select>
+                
+                    <label for="browsers" style="margin-right: 25%;">سابقه کاری:</label>
+                    <input list="browsers" >
+                    <datalist id="browsers">
+                        <option value="بدون سابقه کاری">
+                        <option value="1-2سال سابقه">
+                        <option value="3-5ساسابقه">
+                        <option value="6-8 سال سابقه">
+                        <option value="بالای 9سال سابقه">
+                    </datalist>
+            </fieldset>
+            
+            <fieldset>
+                <legend>درباره من</legend>
+                <textarea name="message" rows="10" cols="30" placeholder="درباره خود توضیح دهید...." style="width: 100%;"></textarea>
+                <br><br>
+                
+                <label for="age">سن خودرا مشخص کنید:</label>
+                15
+                <input type="range" id="age" name="quantity" min="15" max="40" onclick="func()">
+                40
+                <output name="x" for="age" style="margin-right:10%;" id="out"></output> <!--javascript-->
+                <label for="" style="display: block; margin-top: 4%;">تصویر خودرابارگذاری کنید.</label>
+                <input type="file">
+                <button type="submit" style="background-color: greenyellow; border-radius: 2px;">ثبت</button>
+                <button type="reset" style="background-color: burlywood;" onclick="y()">بازنشانی</button>
+            </fieldset>
+            
         </form>
     </div>
-
+    <script src="index.js"></script>
 </body>
 </html>
