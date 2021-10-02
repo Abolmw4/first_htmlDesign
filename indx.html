@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="index_responsive.css">
+    <title>فرم استخدامی</title>
 </head>
 <body>
     <div id="main">
@@ -15,19 +16,19 @@
         <form action="" target="_blank" autocomplete="on">
             <fieldset>
                 <legend>اطلاعات شخصی</legend>
-                <label for="fname">نام:</label>
+                <label  for="fname">نام:</label>
                 <input type="text" id="fname" name="fname" class="inputs">
 
-                <label for="lname" style="margin-right: 10%;">نام خانوادگی:</label>
+                <label class="first" for="lname" style="margin-right: 10%;">نام خانوادگی:</label>
                 <input type="text" id="lname" name="lname" class="inputs"><br>
 
-                <label for="fathername">نام پدر:</label>
+                <label class="first" for="fathername">نام پدر:</label>
                 <input type="text" id="fathername" name="fathername" class="inputs" style="margin-right: 0; margin-top: 3%;">
 
-                <label for="nationID" style="margin-right: 9%;">شماره ملی:</label>
+                <label class="first" for="nationID" style="margin-right: 9%;">شماره ملی:</label>
                 <input type="tel" id="nationID" name="nationID" class="inputs"><br>
 
-                <label for="email">ایمیل:</label>
+                <label class="first" for="email">ایمیل:</label>
                 <input type="email" id="email" name="email" class="inputs" style="margin-top: 3%;"<br>
 
                 <label style="margin-right: 12%;">جنسیت:</label>
@@ -73,7 +74,7 @@
 
             <fieldset>
                 <legend>اطلاعات حقوق</legend>
-                <label for="experince">سطح کاری:</label>
+                <label for="experince" class="salary">سطح کاری:</label>
                 <select id="experince" name="experince">
                     <option value="inter">کارآموز</option>
                     <option value="junior" selected>جوان</option>
@@ -82,8 +83,8 @@
                     <option value="leader">رهبر</option>
                 </select>
                 
-                    <label for="browsers" style="margin-right: 25%;">سابقه کاری:</label>
-                    <input list="browsers" >
+                    <label for="browsers" style="margin-right: 25%;" class="salary">سابقه کاری:</label>
+                    <input list="browsers" class="browsers">
                     <datalist id="browsers">
                         <option value="بدون سابقه کاری">
                         <option value="1-2سال سابقه">
@@ -95,7 +96,7 @@
             
             <fieldset>
                 <legend>درباره من</legend>
-                <textarea name="message" rows="10" cols="30" placeholder="درباره خود توضیح دهید...." style="width: 100%;"></textarea>
+                <textarea name="message" rows="10" placeholder="درباره خود توضیح دهید...." style="width: 100%;"></textarea>
                 <br><br>
                 
                 <label for="age">سن خودرا مشخص کنید:</label>
@@ -104,7 +105,7 @@
                 40
                 <output name="x" for="age" style="margin-right:10%;" id="out"></output> <!--javascript-->
                 <label for="" style="display: block; margin-top: 4%;">تصویر خودرابارگذاری کنید.</label>
-                <input type="file">
+                <input type="file" class="submit">
                 <button type="submit" style="background-color: greenyellow; border-radius: 2px;">ثبت</button>
                 <button type="reset" style="background-color: burlywood;" onclick="y()">بازنشانی</button>
             </fieldset>

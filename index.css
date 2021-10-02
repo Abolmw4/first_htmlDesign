@@ -32,6 +32,7 @@ h1{
     /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     font-size: 22px;
     color: #F7EDD4;
+    text-align: center;
 }
 form{
     direction: rtl;

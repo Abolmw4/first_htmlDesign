@@ -1,0 +1,77 @@
+/*@media only screen and (max-width:1024px) {
+    #main{
+        width:50%;
+    }
+    h1{
+        font-size:large;
+    }
+}
+@media only screen and (max-width:768px){
+    #main{
+        width:67%
+    }
+    h1{font-size:large;
+    }
+}
+*/
+@media screen and (max-width:376px){
+    #main{
+        width:90% !important;
+    }
+    #header{
+        width:65% !important;
+        top:-16px;
+    }
+    h1{
+        font-size:16px;
+    }
+    .inputs{
+        width:93%;
+    }
+    #experince{
+        width:67%;
+        margin-bottom:8%
+    }
+    .salary{
+         margin-right: 4% !important;
+    }
+    .browsers{
+        width: 61.5%;
+    }
+    .submit{
+        display: block;
+        margin-bottom:4%;
+    }
+}
+@media screen and (min-width:400px) and (max-width:500px) {
+    #main{
+        width:97%;
+    }
+        #header{
+          width:60% !important;
+          top:-18px;
+      }
+          h1{
+          font-size:16px;
+      }
+         .inputs{
+          width:25.9%;
+      }
+          #experince{
+          width:67%;
+          margin-bottom:8%
+      }
+          .salary{
+           margin-right: 4% !important;
+      }
+          .browsers{
+          width: 61.5%;
+      }
+  }
+  @media screen and (min-width:768px) and (max-width:1024px) {
+    #main{
+      width:70%;
+  }
+}
+
+
